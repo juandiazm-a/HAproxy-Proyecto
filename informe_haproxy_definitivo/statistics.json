@@ -1,0 +1,34 @@
+{
+  "Total" : {
+    "transaction" : "Total",
+    "sampleCount" : 200,
+    "errorCount" : 0,
+    "errorPct" : 0.0,
+    "meanResTime" : 2.2150000000000007,
+    "medianResTime" : 2.0,
+    "minResTime" : 1.0,
+    "maxResTime" : 25.0,
+    "pct1ResTime" : 3.0,
+    "pct2ResTime" : 3.9499999999999886,
+    "pct3ResTime" : 6.0,
+    "throughput" : 21.215657154980374,
+    "receivedKBytesPerSec" : 3.56356741275061,
+    "sentKBytesPerSec" : 2.6312387291821366
+  },
+  "Peticion_API_HAProxy" : {
+    "transaction" : "Peticion_API_HAProxy",
+    "sampleCount" : 200,
+    "errorCount" : 0,
+    "errorPct" : 0.0,
+    "meanResTime" : 2.2150000000000007,
+    "medianResTime" : 2.0,
+    "minResTime" : 1.0,
+    "maxResTime" : 25.0,
+    "pct1ResTime" : 3.0,
+    "pct2ResTime" : 3.9499999999999886,
+    "pct3ResTime" : 6.0,
+    "throughput" : 21.215657154980374,
+    "receivedKBytesPerSec" : 3.56356741275061,
+    "sentKBytesPerSec" : 2.6312387291821366
+  }
+}

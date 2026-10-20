@@ -1,19 +1,34 @@
+
 services:
   frontend:
-    # TODO: Add frontend service
+    build: ./frontend
+    container_name: frontend
+    networks:
+      - app-net
 
-  backend:
-    # TODO: Add backend service
+  backend1:
+    build: ./backend
+    container_name: backend1
+    networks:
+      - app-net
+
+  backend2:
+    build: ./backend
+    container_name: backend2
+    networks:
+      - app-net
 
   haproxy:
     image: haproxy:2.8
+    container_name: haproxy
     volumes:
-      - ./haproxy/haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg
+      - ./haproxy/haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg:ro
     ports:
-      - "80:80"
+      - "8080:80"
     depends_on:
       - frontend
-      - backend
+      - backend1
+      - backend2
     networks:
       - app-net
 
